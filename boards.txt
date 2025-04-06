@@ -1,0 +1,235 @@
+
+menu.clksrc=CPU Clock Frequency
+#menu.toolsloc=Tool Install Location
+menu.FlashMode=Flash Mode
+
+################################################################################################
+
+aries.name=ARIES Board
+aries.hide=true
+aries.vid.0=0x0403
+aries.pid.0=0x6015
+aries.vid.1=0x10C4
+aries.pid.1=0xEA60
+
+#aries.menu.toolsloc.default=Default
+#aries.menu.toolsloc.manual=Manual
+#aries.menu.toolsloc.default.compiler.path={runtime.tools.riscv64-vega-elf-gcc.path}/bin/
+#aries.menu.toolsloc.manual.compiler.path=
+
+#Point to the file for ./variants/<variant>/pins_arduino.h
+aries.build.variant=standard
+
+aries.menu.clksrc.aries100=100MHz
+aries.menu.clksrc.aries100.build.f_cpu=100000000L
+
+aries.menu.clksrc.aries75=75MHz
+aries.menu.clksrc.aries75.build.f_cpu=75000000L
+
+aries.build.mcu=rv32im
+aries.build.vid.0=0x0403
+aries.build.pid.0=0x6015
+aries.build.vid.1=0x10C4
+aries.build.pid.1=0xEA60
+
+aries.bootloader.tool=arduflasher
+aries.bootloader.file=arduflasher/flasher_arduino.bin
+
+#"The 'core' file directory for this board, in ./cores
+aries.build.core=arduino
+# This sets a define for use in the compiled code.
+aries.build.board=VEGA_aries
+aries.build.boardenv=aries
+aries.build.usb_product="ARIES"
+aries.build.sdata.size=4096
+
+#This selects the tool from "programmers.txt"
+aries.program.tool=vegaxmodem
+aries.upload.tool=vegaxmodem
+# Flash max limit is 2MB
+aries.upload.maximum_size=2097152
+
+aries.menu.FlashMode.default=Disabled
+aries.menu.FlashMode.default.build.ldscript={compiler.sdk.path}/link.lds
+aries.menu.FlashMode.on=Enabled
+aries.menu.FlashMode.on.build.ldscript={compiler.sdk.path}/link1.lds
+
+#aries.build.ldscript={compiler.sdk.path}/link.lds
+
+################################################################################################
+
+aries_v2.name=ARIES v2
+
+aries_v2.vid.0=0x0403
+aries_v2.pid.0=0x6015
+
+#aries_v2.menu.toolsloc.default=Default
+#aries_v2.menu.toolsloc.manual=Manual
+#aries_v2.menu.toolsloc.default.compiler.path={runtime.tools.riscv64-vega-elf-gcc.path}/bin/
+#aries_v2.menu.toolsloc.manual.compiler.path=
+
+#Point to the file for ./variants/<variant>/pins_arduino.h
+aries_v2.build.variant=standard
+
+aries_v2.menu.clksrc.aries100=100MHz
+aries_v2.menu.clksrc.aries100.build.f_cpu=100000000L
+
+aries_v2.menu.clksrc.aries75=75MHz
+aries_v2.menu.clksrc.aries75.build.f_cpu=75000000L
+
+aries_v2.build.mcu=rv32im
+aries_v2.build.vid.0=0x0403
+aries_v2.build.vid.0=0x6015
+
+aries_v2.bootloader.tool=arduflasher
+aries_v2.bootloader.file=arduflasher/flasher_arduino.bin
+
+#"The 'core' file directory for this board, in ./cores
+aries_v2.build.core=arduino
+# This sets a define for use in the compiled code.
+aries_v2.build.board=VEGA_ARIES_V2
+aries_v2.build.boardenv=aries
+aries_v2.build.usb_product="ARIES"
+aries_v2.build.sdata.size=4096
+
+#This selects the tool from "programmers.txt"
+aries_v2.program.tool=vegaxmodem
+aries_v2.upload.tool=vegaxmodem
+# Flash max limit is 2MB
+aries_v2.upload.maximum_size=2097152
+
+aries_v2.menu.FlashMode.default=Disabled
+aries_v2.menu.FlashMode.default.build.ldscript={compiler.sdk.path}/link.lds
+aries_v2.menu.FlashMode.on=Enabled
+aries_v2.menu.FlashMode.on.build.ldscript={compiler.sdk.path}/link1.lds
+
+#aries_v2.build.ldscript={compiler.sdk.path}/link.lds
+
+################################################################################################
+
+aries_v3.name=ARIES v3
+
+aries_v3.vid.0=0x10C4
+aries_v3.pid.0=0xEA60
+
+
+#Point to the file for ./variants/<variant>/pins_arduino.h
+aries_v3.build.variant=standard
+
+aries_v3.menu.clksrc.aries100=100MHz
+aries_v3.menu.clksrc.aries100.build.f_cpu=100000000L
+
+aries_v3.menu.clksrc.aries75=75MHz
+aries_v3.menu.clksrc.aries75.build.f_cpu=75000000L
+
+aries_v3.build.mcu=rv32im
+aries_v3.build.vid.0=0x10C4
+aries_v3.build.vid.0=0xEA60
+
+aries_v3.bootloader.tool=arduflasher
+aries_v3.bootloader.file=arduflasher/flasher_arduino.bin
+
+#"The 'core' file directory for this board, in ./cores
+aries_v3.build.core=arduino
+# This sets a define for use in the compiled code.
+aries_v3.build.board=VEGA_ARIES_V3
+aries_v3.build.boardenv=aries
+aries_v3.build.usb_product="ARIES"
+aries_v3.build.sdata.size=4096s
+
+#This selects the tool from "programmers.txt"
+aries_v3.program.tool=vegaxmodem
+aries_v3.upload.tool=vegaxmodem
+# Flash max limit is 2MB
+aries_v3.upload.maximum_size=2097152
+
+aries_v3.menu.FlashMode.default=Disabled
+aries_v3.menu.FlashMode.default.build.ldscript={compiler.sdk.path}/link.lds
+aries_v3.menu.FlashMode.on=Enabled
+aries_v3.menu.FlashMode.on.build.ldscript={compiler.sdk.path}/link1.lds
+
+#aries_v3.build.ldscript={compiler.sdk.path}/link.lds
+
+################################################################################################
+
+aries_micro.name=ARIES Micro
+
+#aries_micro.vid.0=0x0403
+#aries_micro.pid.0=0x6015
+
+aries_micro.bootloader.tool=arduflasher
+aries_micro.bootloader.file=arduflasher/flasher_arduino.bin
+
+#Point to the file for ./variants/<variant>/pins_arduino.h
+aries_micro.build.variant=standard
+
+aries_micro.menu.clksrc.aries100=100MHz
+aries_micro.menu.clksrc.aries100.build.f_cpu=100000000L
+
+aries_micro.menu.clksrc.aries75=75MHz
+aries_micro.menu.clksrc.aries75.build.f_cpu=75000000L
+
+aries_micro.build.mcu=rv32im
+
+#"The 'core' file directory for this board, in ./cores
+aries_micro.build.core=arduino
+# This sets a define for use in the compiled code.
+aries_micro.build.board=VEGA_ARIES_MICRO
+aries_micro.build.boardenv=aries
+aries_micro.build.usb_product="ARIES"
+aries_micro.build.sdata.size=4096
+#This selects the tool from "programmers.txt"
+aries_micro.program.tool=vegaxmodem
+aries_micro.upload.tool=vegaxmodem
+# Flash max limit is 2MB
+aries_micro.upload.maximum_size=2097152
+
+aries_micro.menu.FlashMode.default=Disabled
+aries_micro.menu.FlashMode.default.build.ldscript={compiler.sdk.path}/link.lds
+aries_micro.menu.FlashMode.on=Enabled
+aries_micro.menu.FlashMode.on.build.ldscript={compiler.sdk.path}/link1.lds
+#aries_micro.build.ldscript={compiler.sdk.path}/link.lds
+
+#################################################################################################
+
+aries_iot.name=ARIES IoT
+
+#aries_iot.vid.0=0x0403
+#aries_iot.pid.0=0x6015
+
+aries_iot.bootloader.tool=arduflasher
+aries_iot.bootloader.file=arduflasher/flasher_arduino.bin
+
+#Point to the file for ./variants/<variant>/pins_arduino.h
+aries_iot.build.variant=standard
+
+aries_iot.menu.clksrc.aries100=100MHz
+aries_iot.menu.clksrc.aries100.build.f_cpu=100000000L
+
+aries_iot.menu.clksrc.aries75=75MHz
+aries_iot.menu.clksrc.aries75.build.f_cpu=75000000L
+
+aries_iot.build.mcu=rv32im
+
+#"The 'core' file directory for this board, in ./cores
+aries_iot.build.core=arduino
+# This sets a define for use in the compiled code.
+aries_iot.build.board=VEGA_ARIES_IOT
+aries_iot.build.boardenv=aries
+aries_iot.build.usb_product="ARIES"
+aries_iot.build.sdata.size=4096
+#This selects the tool from "programmers.txt"
+aries_iot.program.tool=vegaxmodem
+aries_iot.upload.tool=vegaxmodem
+# Flash max limit is 2MB
+aries_iot.upload.maximum_size=2097152
+
+aries_iot.menu.FlashMode.default=Disabled
+aries_iot.menu.FlashMode.default.build.ldscript={compiler.sdk.path}/link.lds
+aries_iot.menu.FlashMode.on=Enabled
+aries_iot.menu.FlashMode.on.build.ldscript={compiler.sdk.path}/link1.lds
+#aries_iot.build.ldscript={compiler.sdk.path}/link.lds
+
+#################################################################################################
+
+
